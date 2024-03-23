@@ -6,6 +6,7 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Add position relative */
 }
 
 .find-jobs-container h1 {
@@ -21,7 +22,7 @@
 
 .find-jobs-form input,
 .find-jobs-form select {
-  width: 100%;
+  width: calc(100% - 22px); /* Adjust input width */
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -30,7 +31,7 @@
 }
 
 .find-jobs-form button {
-  width: 100%;
+  width: calc(100% - 22px); /* Adjust button width */
   padding: 12px;
   background-color: #007bff;
   color: #fff;
@@ -38,6 +39,23 @@
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+}
+
+/* Back Button Styles */
+.back-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
 }
 
 /* Styles for Search Results */

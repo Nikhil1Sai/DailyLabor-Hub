@@ -20,7 +20,7 @@ public class PostJobRequest {
     private String companyWebsite;
     private  String jobTitle;
     private JobType jobType;
-    private String location;
+    private String jobLocation;
     private Date validTill;
     private String jobDescription;
 }

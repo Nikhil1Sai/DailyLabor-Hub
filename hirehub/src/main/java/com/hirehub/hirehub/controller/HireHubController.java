@@ -38,9 +38,9 @@ public class HireHubController {
     @CrossOrigin
     public ResponseEntity<SearchJobResponse> postJob( @RequestParam(value = "jobTitle", required = false) String jobTitle,
                                                       @RequestParam(value = "jobType", required = false) JobType jobType,
-                                                      @RequestParam(value = "location", required = false) String location){
+                                                      @RequestParam(value = "jobLocation", required = false) String jobLocation){
 
-        List<PostJob> availableJobs = searchJobService.searchJob(jobTitle, jobType, location);
+        List<PostJob> availableJobs = searchJobService.searchJob(jobTitle, jobType, jobLocation);
 
         SearchJobResponse searchJobResponse = SearchJobResponse
                                              .builder()

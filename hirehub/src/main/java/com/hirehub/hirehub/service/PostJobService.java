@@ -20,7 +20,7 @@ public class PostJobService {
         post.setCompanyWebsite(postJobRequest.getCompanyWebsite());
         post.setJobDescription(postJobRequest.getJobDescription());
         post.setJobTitle(postJobRequest.getJobTitle());
-        post.setLocation(postJobRequest.getLocation());
+        post.setLocation(postJobRequest.getJobLocation());
         post.setValidTill(postJobRequest.getValidTill());
         post.setJobType(postJobRequest.getJobType());
 

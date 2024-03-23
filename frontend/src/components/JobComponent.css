@@ -1,58 +1,86 @@
+/* Styles for PostJobsComponent */
 .post-jobs-container {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #f9f9f9;
+  width: 100%;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
 }
 
 .post-jobs-form {
-  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-jobs-form h1 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .post-jobs-form label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
 .post-jobs-form input,
 .post-jobs-form select,
 .post-jobs-form textarea {
-  width: 100%;
-  padding: 8px;
+  width: calc(100% - 20px);
+  padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.post-jobs-form textarea {
+  resize: vertical;
 }
 
 .post-jobs-form button {
-  display: block;
-  width: 100%;
-  padding: 10px;
+  width: calc(100% - 20px);
+  padding: 12px;
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Job Card Styles */
-.job-card {
-  background-color: #f9f9f9;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.post-jobs-form button:hover {
+  background-color: #0056b3;
 }
 
-.job-card h2 {
-  margin-bottom: 10px;
-  color: #333;
+/* Success Message Styles */
+.success-message {
+  color: #28a745;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.job-card p {
-  margin-bottom: 5px;
-  color: #555;
+/* Back Button Styles */
+.back-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
 }

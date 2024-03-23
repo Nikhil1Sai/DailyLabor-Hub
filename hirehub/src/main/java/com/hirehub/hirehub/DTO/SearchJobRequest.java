@@ -16,5 +16,5 @@ import java.util.Date;
 public class SearchJobRequest {
     private  String jobTitle;
     private JobType jobType;
-    private String location;
+    private String jobLocation;
 }

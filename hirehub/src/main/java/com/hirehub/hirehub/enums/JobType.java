@@ -2,5 +2,5 @@ package com.hirehub.hirehub.enums;
 
 
 public enum JobType {
-    PART_TIME, FULL_TIME, INTERNSHIP
+    DAILY_BASE, HOURLY_BASE, PART_TIME, FULL_TIME, INTERNSHIP
 }
